@@ -8,11 +8,11 @@ int main()
 {
       int x=30;
       lcd.printf("108061113");
-      while(x > 0)
-      {
-            led = !led;             // toggle led
+      while(x >= 0)
+      {     
+            led = !led;            // toggle led
             lcd.locate(0,1);
-            lcd.printf("%u",x);    //counter display
+            lcd.printf("%2i",x);    //counter display
             ThisThread::sleep_for(1s);
             x--;
       }
